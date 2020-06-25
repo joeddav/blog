@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Joe Davison Blog
-description: Hi I'm Joe, a Research Engineer at Hugging Face 🤗
+description: Hi I'm Joe, a Research Engineer at Hugging Face
 github_username: joeddav
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "blog"
