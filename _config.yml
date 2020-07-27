@@ -7,7 +7,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 
 title: Joe Davison Blog
-description: Hi I'm Joe, a Research Engineer at Hugging Face
+description: Hi I'm Joe, a Research Engineer at Hugging Face 🤗
 github_username: joeddav
 # you can comment the below line out if your repo name is not different than your baseurl
 github_repo: "blog"
@@ -40,7 +40,7 @@ baseurl: "/blog" # the subpath of your site, e.g. "/blog".
 minima:
   social_links:
     twitter: joeddav
-    github: josephdavison
+    linkedin: josephdavison
 
 # Set this to true to get LaTeX math equation support
 use_math: true
