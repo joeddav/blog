@@ -11,6 +11,7 @@ website:
         text: Blog
       - href: https://joeddav.github.io
         text: About
+        target: _blank
     right:
       - icon: github
         href: https://github.com/joeddav
