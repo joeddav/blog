@@ -17,29 +17,31 @@ body.quarto-light {
   --page-fg: #2d2926;
   --muted: rgba(45, 41, 38, 0.68);
   --muted-strong: rgba(45, 41, 38, 0.84);
-  --accent: #b95c41;
-  --accent-soft: rgba(185, 92, 65, 0.12);
-  --accent-line: rgba(185, 92, 65, 0.26);
-  --surface: rgba(255, 250, 244, 0.82);
-  --surface-strong: rgba(255, 252, 248, 0.94);
-  --surface-alt: rgba(251, 244, 235, 0.92);
-  --hairline: rgba(92, 72, 52, 0.16);
+  --accent: #c4556a;
+  --accent-soft: rgba(196, 85, 106, 0.12);
+  --accent-line: rgba(196, 85, 106, 0.26);
+  --accent-badge: rgba(196, 85, 106, 0.16);
+  --surface: rgba(255, 252, 248, 0.96);
+  --surface-strong: rgba(255, 253, 249, 0.98);
+  --surface-alt: rgba(248, 240, 231, 0.94);
+  --hairline: rgba(92, 72, 52, 0.19);
   --figure-bg: #fcf8f2;
   --code-bg: #fcf8f2;
   --output-bg: #f1e8dc;
-  --code-border: rgba(92, 72, 52, 0.14);
+  --code-border: rgba(92, 72, 52, 0.16);
   --toc-bg: rgba(255, 250, 244, 0.8);
-  --listing-shadow: 0 20px 48px rgba(68, 46, 30, 0.09);
+  --listing-shadow: 0 18px 36px rgba(68, 46, 30, 0.07);
 }
 
 body.quarto-dark {
   --page-bg: #111417;
-  --page-fg: #eee4d7;
-  --muted: rgba(238, 228, 215, 0.66);
-  --muted-strong: rgba(238, 228, 215, 0.82);
-  --accent: #f08a67;
-  --accent-soft: rgba(240, 138, 103, 0.12);
-  --accent-line: rgba(240, 138, 103, 0.28);
+  --page-fg: #f4ede4;
+  --muted: rgba(244, 237, 228, 0.7);
+  --muted-strong: rgba(244, 237, 228, 0.86);
+  --accent: #f59791;
+  --accent-soft: rgba(245, 151, 145, 0.12);
+  --accent-line: rgba(245, 151, 145, 0.28);
+  --accent-badge: rgba(245, 151, 145, 0.18);
   --surface: rgba(23, 27, 31, 0.82);
   --surface-strong: rgba(28, 32, 37, 0.94);
   --surface-alt: rgba(18, 22, 26, 0.96);
@@ -196,13 +198,14 @@ div.quarto-post {
   grid-template-columns: minmax(5.6rem, 6.4rem) minmax(0, 1fr) minmax(12.5rem, 15rem);
   grid-template-areas: "meta body thumb";
   gap: 1.1rem 1.5rem;
-  align-items: center;
+  align-items: stretch;
+  height: 12.75rem;
   padding: 1.2rem 1.25rem;
   border: 1px solid var(--hairline);
   border-radius: var(--radius-lg);
   background: var(--surface);
   box-shadow: var(--listing-shadow);
-  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  transition: transform 180ms ease, box-shadow 180ms ease;
   overflow: hidden;
 }
 
@@ -218,8 +221,7 @@ div.quarto-post::before {
 
 div.quarto-post:hover {
   transform: translateY(-3px);
-  border-color: var(--accent-line);
-  box-shadow: var(--shadow-strong);
+  box-shadow: var(--shadow-soft);
 }
 
 div.quarto-post:hover::before,
@@ -228,30 +230,14 @@ div.quarto-post:focus-within::before {
 }
 
 div.quarto-post:first-child {
-  padding-top: 1.45rem;
-  padding-bottom: 1.45rem;
-}
-
-div.quarto-post:first-child .body::before {
-  content: "Featured note";
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  padding: 0.26rem 0.68rem;
-  border-radius: 999px;
-  margin-bottom: 0.9rem;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  height: 12.75rem;
 }
 
 div.quarto-post .metadata {
   grid-area: meta;
   max-width: none;
   align-self: start;
+  min-width: 0;
 }
 
 div.quarto-post .metadata a {
@@ -269,6 +255,33 @@ div.quarto-post .listing-date {
 div.quarto-post .body {
   grid-area: body;
   min-width: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+div.quarto-post:first-child .body {
+  padding-top: 1.8rem;
+}
+
+div.quarto-post:first-child .body::before {
+  content: "Featured note";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.24rem 0.62rem;
+  border-radius: 999px;
+  background: var(--accent-badge);
+  color: var(--accent);
+  font-size: 0.69rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .listing-title {
@@ -295,24 +308,36 @@ div.quarto-post .body {
 div.quarto-post .thumbnail {
   grid-area: thumb;
   max-width: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   justify-self: stretch;
+  align-self: stretch;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 div.quarto-post .thumbnail a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 .thumbnail-image {
-  width: 100%;
-  aspect-ratio: 1.35 / 1;
+  width: min(100%, 15rem);
+  height: 10.5rem;
   object-fit: contain;
-  padding: 0.8rem;
-  border-radius: calc(var(--radius-lg) - 0.35rem);
-  border: 1px solid var(--hairline);
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0)),
-    var(--figure-bg);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .listing-no-matching {
@@ -435,10 +460,12 @@ code:not(.sourceCode code) {
 blockquote {
   margin: 2rem 0;
   padding: 1.1rem 1.35rem 1.1rem 1.45rem;
-  border: 1px solid var(--accent-line);
+  border: 1px solid var(--hairline);
   border-left: 4px solid var(--accent);
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  background: linear-gradient(90deg, var(--accent-soft), transparent 85%);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+  font-size: 0.95rem;
 }
 
 blockquote p:last-child {
@@ -546,6 +573,7 @@ body.home-page main.content > header#title-block-header::after {
   div.quarto-post {
     grid-template-columns: minmax(5rem, 5.8rem) minmax(0, 1fr) minmax(11rem, 13rem);
     gap: 1rem 1.2rem;
+    height: 11.75rem;
   }
 
   nav#TOC {
@@ -564,10 +592,12 @@ body.home-page main.content > header#title-block-header::after {
       "meta"
       "body"
       "thumb";
+    height: auto;
   }
 
   div.quarto-post .thumbnail {
     max-width: 30rem;
+    align-self: auto;
   }
 
   #quarto-document-content > p,
@@ -602,8 +632,10 @@ body.home-page main.content > header#title-block-header::after {
   }
 
   .thumbnail-image {
+    width: 100%;
+    height: auto;
     aspect-ratio: 16 / 10;
-    padding: 0.65rem;
+    padding: 0;
   }
 
   .cell .cell-output pre {

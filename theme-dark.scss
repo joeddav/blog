@@ -6,12 +6,12 @@ $headings-font-weight: 650;
 $font-family-monospace: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
 
 $body-bg: #111417;
-$body-color: #eee4d7;
+$body-color: #f4ede4;
 
-$primary: #f08a67;
+$primary: #f59791;
 $secondary: #a2978b;
-$link-color: #f08a67;
-$link-hover-color: #ffb18e;
+$link-color: #f59791;
+$link-hover-color: #db847d;
 
 $border-color: #302923;
 $navbar-bg: rgba(17, 20, 23, 0.84);
@@ -26,16 +26,16 @@ $code-color: #eee4d7;
 
 #TOC a:hover,
 #TOC .nav-link.active {
-  color: #f08a67 !important;
+  color: #f59791 !important;
 }
 
 #TOC .nav-link.active {
-  border-left-color: #f08a67 !important;
+  border-left-color: #f59791 !important;
 }
 
 .navbar .nav-link:hover,
 .navbar .navbar-brand:hover {
-  color: #f08a67 !important;
+  color: #f59791 !important;
 }
 
 .navbar,
