@@ -1,17 +1,44 @@
 /*-- scss:defaults --*/
 
-$link-color: #c4556a;
-$link-hover-color: #a84258;
+$font-family-sans-serif: "Manrope", "Avenir Next", "Segoe UI", sans-serif;
+$headings-font-family: "Fraunces", Georgia, serif;
+$headings-font-weight: 650;
+$font-family-monospace: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+
+$body-bg: #f5efe6;
+$body-color: #2d2926;
+
+$primary: #b95c41;
+$secondary: #6d665d;
+$link-color: #b95c41;
+$link-hover-color: #8e422e;
+
+$border-color: #d9ccbb;
+$navbar-bg: rgba(245, 239, 230, 0.82);
+
+$card-bg: rgba(255, 250, 244, 0.92);
+$card-border-color: #d9ccbb;
+
+$code-bg: #fbf6ee;
+$code-color: #2d2926;
 
 /*-- scss:rules --*/
 
 #TOC a:hover,
 #TOC .nav-link.active {
-  color: #c4556a !important;
+  color: #b95c41 !important;
 }
+
 #TOC .nav-link.active {
-  border-left-color: #c4556a !important;
+  border-left-color: #b95c41 !important;
 }
-.navbar .nav-link:hover {
-  color: #c4556a !important;
+
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #b95c41 !important;
+}
+
+.navbar,
+.nav-footer {
+  background-color: rgba(245, 239, 230, 0.82);
 }
