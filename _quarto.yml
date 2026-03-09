@@ -9,7 +9,7 @@ website:
     left:
       - href: index.qmd
         text: Blog
-      - href: about.qmd
+      - href: https://joeddav.github.io
         text: About
     right:
       - icon: github
