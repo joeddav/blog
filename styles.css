@@ -1,0 +1,174 @@
+/* Cleaner post listing cards */
+div.quarto-post {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+div.quarto-post .thumbnail img {
+  border-radius: 8px;
+}
+
+div.quarto-post .thumbnail {
+  max-width: 280px;
+}
+
+div.quarto-post .metadata {
+  max-width: 200px;
+}
+
+/* Better image rendering in posts */
+@media (min-width: 768px) {
+  .quarto-figure {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.quarto-figure img {
+  border-radius: 6px;
+}
+
+
+/* Code blocks — smaller font, rounded */
+div.sourceCode {
+  border-radius: 6px;
+  font-size: 0.88em;
+}
+
+/* Blockquotes as callouts */
+blockquote {
+  background: rgba(196, 85, 106, 0.06);
+  border-left: 3px solid rgba(196, 85, 106, 0.4);
+  border-radius: 0 6px 6px 0;
+  padding: 0.8em 1.2em;
+  margin: 1.5em 0;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+blockquote, blockquote p {
+  color: var(--bs-body-color) !important;
+}
+
+/* ── Notebook cells — group code + output as one block ── */
+.cell {
+  margin: 1.5em 0;
+}
+
+/* Kill every possible margin/gap between code and output */
+.cell .code-copy-outer-scaffold {
+  margin-bottom: 0 !important;
+}
+
+.cell .cell-code {
+  margin-bottom: 0 !important;
+}
+
+.cell .cell-code > pre {
+  margin-bottom: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.cell div.sourceCode {
+  margin-bottom: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.cell .cell-output {
+  margin-top: 0 !important;
+  font-size: 0.88em;
+}
+
+.cell .cell-output pre {
+  margin-top: 0 !important;
+  border-radius: 0 0 6px 6px;
+  padding: 0.6em 1em 0.6em 0.7em;
+  opacity: 0.85;
+  background: rgba(128, 128, 128, 0.04);
+}
+
+/* ── Typography ── */
+body {
+  line-height: 1.75;
+}
+
+/* ── Links — clean style ── */
+a {
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Navbar icon hover — color set per-theme in SCSS */
+
+/* Hide category badges */
+.quarto-categories {
+  display: none !important;
+}
+
+/* ── Title block — more breathing room ── */
+header#title-block-header {
+  margin-bottom: 2.5em;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+/* Description as subtitle */
+header#title-block-header .description {
+  font-size: 1.15em;
+  opacity: 0.75;
+  margin-top: 0.5em;
+}
+
+/* Hide "PUBLISHED" label, just show date */
+.quarto-title-meta-heading {
+  display: none;
+}
+
+.quarto-title-meta-contents p {
+  opacity: 0.6;
+  font-size: 0.9em;
+}
+
+/* ── TOC sidebar — compact and subtle, don't touch Quarto's border ── */
+#TOC .active {
+  font-weight: 500;
+}
+
+#TOC a {
+  font-size: 0.8em;
+  opacity: 0.65;
+  color: inherit !important;
+  font-weight: 400;
+}
+
+#TOC a:hover {
+  opacity: 1;
+}
+
+#TOC .nav-link.active {
+  opacity: 1;
+  font-weight: 500;
+}
+
+#TOC ul ul > li > a {
+  padding-left: 1.6em;
+}
+
+nav#TOC > h2 {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.4;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}

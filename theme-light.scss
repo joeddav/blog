@@ -1,0 +1,17 @@
+/*-- scss:defaults --*/
+
+$link-color: #c4556a;
+$link-hover-color: #a84258;
+
+/*-- scss:rules --*/
+
+#TOC a:hover,
+#TOC .nav-link.active {
+  color: #c4556a !important;
+}
+#TOC .nav-link.active {
+  border-left-color: #c4556a !important;
+}
+.navbar .nav-link:hover {
+  color: #c4556a !important;
+}

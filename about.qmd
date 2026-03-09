@@ -1,0 +1,7 @@
+---
+title: "About"
+---
+
+Hi, I'm Joe. I work on machine learning and natural language processing.
+
+You can find me on [GitHub](https://github.com/joeddav), [Twitter](https://twitter.com/joeddav), and [LinkedIn](https://linkedin.com/in/josephdavison).
