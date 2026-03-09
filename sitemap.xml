@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://joeddav.github.io/blog/2020/03/03/REALM.html</loc>
-<lastmod>2020-03-03T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://joeddav.github.io/blog/2020/05/29/ZSL.html</loc>
-<lastmod>2020-05-29T00:00:00-05:00</lastmod>
-</url>
-<url>
-<loc>https://joeddav.github.io/blog/about/</loc>
-</url>
-<url>
-<loc>https://joeddav.github.io/blog/</loc>
-</url>
-<url>
-<loc>https://joeddav.github.io/blog/search/</loc>
-</url>
-<url>
-<loc>https://joeddav.github.io/blog/categories/</loc>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://joeddav.github.io/blog/about.html</loc>
+    <lastmod>2026-03-09T08:52:23.494Z</lastmod>
+  </url>
+  <url>
+    <loc>https://joeddav.github.io/blog/posts/2020-03-03-realm/index.html</loc>
+    <lastmod>2026-03-09T08:52:23.537Z</lastmod>
+  </url>
+  <url>
+    <loc>https://joeddav.github.io/blog/index.html</loc>
+    <lastmod>2026-03-09T08:52:23.536Z</lastmod>
+  </url>
+  <url>
+    <loc>https://joeddav.github.io/blog/posts/2020-05-29-zsl/index.html</loc>
+    <lastmod>2026-03-09T08:52:23.571Z</lastmod>
+  </url>
 </urlset>
