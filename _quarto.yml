@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Joe Davison"
+  site-url: https://joeddav.github.io/blog
+  navbar:
+    left:
+      - href: index.qmd
+        text: Blog
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/joeddav
+      - icon: twitter
+        href: https://twitter.com/joeddav
+      - icon: linkedin
+        href: https://linkedin.com/in/joeddav
+  page-footer:
+    center: "Made with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme-light.scss]
+      dark: [default, theme-dark.scss]
+    respect-user-color-scheme: true
+    highlight-style-dark: github-dark
+    css: styles.css
+    toc: true
+    toc-expand: true
+    include-in-header: _title-separator.html
+    include-after-body: _utterances-theme.html

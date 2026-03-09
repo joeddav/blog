@@ -1,0 +1,12 @@
+---
+title: "Joe Davison"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: false
+  feed: true
+page-layout: full
+title-block-banner: false
+body-classes: home-page
+---

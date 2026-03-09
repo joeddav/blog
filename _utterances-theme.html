@@ -1,0 +1,60 @@
+<script>
+(function() {
+  if (!/\/posts\//.test(window.location.pathname)) return;
+
+  function isDark() {
+    return document.body.classList.contains('quarto-dark');
+  }
+
+  function utterancesTheme() {
+    return isDark() ? 'photon-dark' : 'github-light';
+  }
+
+  // Inject utterances
+  var main = document.querySelector('main.content');
+  if (!main) return;
+
+  var container = document.createElement('div');
+  container.id = 'utterances-container';
+  container.style.marginTop = '2em';
+  main.appendChild(container);
+
+  var s = document.createElement('script');
+  s.src = 'https://utteranc.es/client.js';
+  s.setAttribute('repo', 'joeddav/blog');
+  s.setAttribute('issue-term', 'title');
+  s.setAttribute('label', 'blogpost-comment');
+  s.setAttribute('theme', utterancesTheme());
+  s.setAttribute('crossorigin', 'anonymous');
+  s.async = true;
+  container.appendChild(s);
+
+  // Theme sync helper
+  function syncTheme() {
+    var iframe = document.querySelector('iframe.utterances-frame');
+    if (iframe) {
+      iframe.contentWindow.postMessage(
+        { type: 'set-theme', theme: utterancesTheme() },
+        '*'
+      );
+    }
+  }
+
+  // When utterances signals ready, sync theme
+  window.addEventListener('message', function(e) {
+    if (e.origin === 'https://utteranc.es') {
+      syncTheme();
+    }
+  });
+
+  // On dark/light toggle, sync theme (watch body class changes)
+  new MutationObserver(function(mutations) {
+    for (var i = 0; i < mutations.length; i++) {
+      if (mutations[i].attributeName === 'class') {
+        syncTheme();
+        break;
+      }
+    }
+  }).observe(document.body, { attributes: true });
+})();
+</script>
