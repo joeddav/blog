@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Hi, I’m Joe. I work on machine learning and natural language processing.\nYou can find me on GitHub, Twitter, and LinkedIn."
-  },
-  {
     "objectID": "posts/2020-03-03-realm/index.html",
     "href": "posts/2020-03-03-realm/index.html",
     "title": "REALM: Knowledge and Transformers",
@@ -19,6 +12,13 @@
     "title": "Joe Davison",
     "section": "",
     "text": "Zero-Shot Learning in Modern NLP\n\n\nState-of-the-art NLP models for text classification without annotated data\n\n\n\n\n\nMay 29, 2020\n\n\n\n\n\n\n\n\n\n\n\n\nREALM: Knowledge and Transformers\n\n\nSummary of REALM (Retrieval-Augmented Language Models) for the Hugging Face reading group\n\n\n\n\n\nMar 3, 2020\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, I’m Joe. I work on machine learning and natural language processing.\nYou can find me on GitHub, Twitter, and LinkedIn."
   },
   {
     "objectID": "posts/2020-05-29-zsl/index.html",

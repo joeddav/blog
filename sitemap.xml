@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://joeddav.github.io/blog/about.html</loc>
-    <lastmod>2026-03-09T09:13:23.515Z</lastmod>
-  </url>
-  <url>
     <loc>https://joeddav.github.io/blog/posts/2020-03-03-realm/index.html</loc>
-    <lastmod>2026-03-09T09:13:23.554Z</lastmod>
+    <lastmod>2026-06-05T19:40:36.935Z</lastmod>
   </url>
   <url>
     <loc>https://joeddav.github.io/blog/index.html</loc>
-    <lastmod>2026-03-09T09:13:23.553Z</lastmod>
+    <lastmod>2026-06-05T19:40:36.933Z</lastmod>
+  </url>
+  <url>
+    <loc>https://joeddav.github.io/blog/about.html</loc>
+    <lastmod>2026-06-05T19:40:36.897Z</lastmod>
   </url>
   <url>
     <loc>https://joeddav.github.io/blog/posts/2020-05-29-zsl/index.html</loc>
-    <lastmod>2026-03-09T09:13:23.585Z</lastmod>
+    <lastmod>2026-06-05T19:40:36.964Z</lastmod>
   </url>
 </urlset>

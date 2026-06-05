@@ -9,7 +9,7 @@
 <link>https://joeddav.github.io/blog/</link>
 <atom:link href="https://joeddav.github.io/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.8.27</generator>
+<generator>quarto-1.9.38</generator>
 <lastBuildDate>Fri, 29 May 2020 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Zero-Shot Learning in Modern NLP</title>
