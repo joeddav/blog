@@ -27,7 +27,6 @@ format:
     theme:
       light: [cosmo, theme-light.scss]
       dark: [default, theme-dark.scss]
-    respect-user-color-scheme: true
     highlight-style-dark: github-dark
     css: styles.css
     toc: true
