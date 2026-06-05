@@ -8,5 +8,4 @@ listing:
   feed: true
 page-layout: full
 title-block-banner: false
-body-classes: home-page
 ---
